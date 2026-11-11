@@ -1,0 +1,6 @@
+# Replication
+role:master
+connected_slaves:2
+slave0:ip=127.0.0.1,port=6380,state=online,offset=1,lag=0
+slave1:ip=localhost,port=8537,state=online,offset=420,lag=1
+master_repl_offset:420

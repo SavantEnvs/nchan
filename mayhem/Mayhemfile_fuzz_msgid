@@ -1,0 +1,9 @@
+project: savantenvs/nchan
+target: fuzz_msgid
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_msgid/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_msgid
+    libfuzzer: true
+    timeout: 30

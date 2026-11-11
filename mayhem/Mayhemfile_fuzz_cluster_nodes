@@ -1,0 +1,9 @@
+project: savantenvs/nchan
+target: fuzz_cluster_nodes
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_cluster_nodes/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_cluster_nodes
+    libfuzzer: true
+    timeout: 30
